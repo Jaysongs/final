@@ -1,0 +1,597 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px
+}
+/* ---------------- Page 1 (Home) -----------------  */
+.firstLook {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+}
+.header {
+    width: 100%;
+    height: 22%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav {
+    border-bottom: 3px solid #F94F00;
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -10px;
+}
+.nav a {
+    text-decoration: none;
+    padding-bottom: 35px;
+    color: #00879E;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav a:hover {
+    color: #F94F00;
+}
+.highlight {
+    color: #F94F00;
+
+}
+
+
+/* ---------------- Page 1 Content -----------------  */
+.hero {
+    background-image:  linear-gradient(to bottom, rgba(248, 131, 21, 0.3), rgba(248, 131, 21, 0.3)), url(../images/abstracthero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroTitle {
+    color: white;
+    font-size: 32px;
+}
+
+.p1Text {
+    height: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    
+}
+.featArtTitle {
+    font-size: 32px;
+}
+.p1desc {
+    text-align: center;
+    width: 878px;
+    font-size: 16px;
+}
+
+.bottomHalfP1 {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 40%;
+}
+.images {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.images img {
+    width: 305px;
+}
+.space {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* ---------------- Page 1 footer -----------------  */
+.footWrap {
+    position: fixed;
+    bottom: 0;
+}
+.footer {
+    width: 100%;
+    height: 45%;
+    background-color: #00879E;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footInfo p {
+    color: white;
+}
+.input {
+    width: 500px;
+    height: 25px;
+    background-color: #8CC9D3;
+    position: relative;
+    text-align: right;
+}
+button {
+    border: none;
+    padding: 5px 20px 5px 20px;
+    margin-right: auto;
+}
+.footImages img {
+    width: 35px;
+    margin: 25px;
+}
+
+/* ---------------- Page 1 Media Queries -----------------  */
+@media (max-width: 1065px) {
+    .images {
+        flex-wrap: wrap;
+        padding-top: 70px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .images img {
+        padding-bottom: 50px;
+    }
+  }
+
+/* ---------------- Page 1 End (Home) -----------------  */
+
+
+
+
+
+/* ---------------- About Page -----------------  */
+.pageWrap {
+    width: 1200px;
+    position: relative;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+.aboutTitle {
+    margin-bottom: 50px;
+}
+.abCover {
+    width: 1200px;
+    height: 484.2px;
+    background: linear-gradient(to bottom, rgba(248, 131, 21, 0.3), rgba(248, 131, 21, 0.3));
+    position: absolute;
+}
+.aboutTitle span {
+    margin: 0;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: solid black 3px;
+    padding-right: 110px;
+}
+.abPic1 img {
+    width: 1200px;
+}
+.abText1 {
+    width: 1100px;
+    display: flex;
+    flex-flow: column;
+    padding-top: 90px;
+    margin: auto;
+}
+.top, .bottomPart {
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px;
+}
+
+@media (max-width: 1100px) {
+    .top, .bottomPart {
+        text-align: left;
+    }
+
+}
+
+
+/* ---------------- About Page -----------------  */
+
+
+
+
+/* ---------------- Gallery Pages -----------------  */
+/* --------------------- Main ---------------------  */
+
+.galleryWall {
+    width: 1145px;
+    height: 600px;
+    margin-bottom: 45px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.leftImg img {
+    width: 360px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+}
+.cover1 {
+    width: 360px;
+    height: 600px;
+    background: linear-gradient(to bottom, rgba(248, 131, 21, 0.3), rgba(248, 131, 21, 0.3));
+    position: absolute;
+}
+.middleImg {
+    width: 360px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.cover2 {
+    background: linear-gradient(to bottom, rgba(248, 131, 21, 0.3), rgba(248, 131, 21, 0.3));
+    width: 100%;
+    height: 48%;
+    position: absolute;
+    z-index: 1;
+}
+.g2 {
+    width: 100%;
+    height: 48%;
+    position: absolute;
+    top: 0;
+}
+.cover3 {
+    background: linear-gradient(to bottom, rgba(40, 98, 198, 0.445), rgba(45, 99, 170, 0.462));
+    width: 100%;
+    height: 48%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+.g3 {
+    width: 100%;
+    height: 48%;
+    position: absolute;
+    bottom: 0;
+}
+.cover4 {
+    width: 360px;
+    height: 600px;
+    background: linear-gradient(to bottom, rgba(40, 98, 198, 0.388), rgba(45, 99, 170, 0.338));
+    position: absolute;
+}
+.rightImg img {
+    width: 360px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* --------------------- Main End ---------------------  */
+
+/* ---------------- Gallery 1 ---------------------  */
+.galleryFace {
+    width: 1200px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.galleryWords {
+    width: 720px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.titleGal {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 55px;
+    text-align: center;
+}
+.paragraphGal {
+    width: 99.5%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* ---------------- Gallery 1 End  ---------------------  */
+
+/* --------------------- Gallery 2 ---------------------  */
+.g3x {
+    width: 100%;
+    height: 48%;
+    position: absolute;
+    top: 0;
+}
+.cover3x {
+    background: linear-gradient(to bottom, rgba(40, 98, 198, 0.445), rgba(45, 99, 170, 0.462));
+    width: 100%;
+    height: 48%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+/* --------------------- Gallery Media Queries ---------------------  */
+@media (max-width: 1200px) {
+    .galleryWall {
+        flex-flow: column;
+        padding-bottom: 2000px;
+        align-items: center;
+    }
+    .leftImg {
+        margin-top: 750px;
+        margin-left: 300px;
+        position: absolute;
+    }
+    .rightImg {
+        margin-top: 750px;
+        margin-left: 300px;
+        position: absolute;
+    }
+
+    .galleryWords {
+        margin-left: 130px;
+        margin-bottom: 2000px;
+    }
+
+    .middleImg {
+        margin-top: 750px;
+        margin-left: 300px;
+    }
+    
+}
+
+/* ---------------- Gallery Pages End -----------------  */
+
+
+
+
+
+/* ---------------- Events Pages main ----------------------  */
+
+.cover4x {
+    width: 1200px;
+    height: 484.25px;
+    background: linear-gradient(to bottom, rgba(5, 129, 117, 0.586), rgba(45, 99, 170, 0.338));
+    z-index: 1;
+    position: absolute;
+}
+.date {
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 130px;
+}
+.dateBox1 {
+    width: 375px;
+    height: 175px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: 50px;
+}
+.sunnyD {
+    width: 100px;
+    height: 100px;
+    background-color: #F94F00;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.sunnyDTitle {
+    width: 100px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    text-overflow: visible;
+}
+.sunnyDText {
+    width: 237px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: 25px;
+    text-decoration: none;
+    color: black;
+}
+.jankSpace {
+    color: white;
+}
+.eventDates {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+/* ---------------- Events Page 1 ----------------------  */
+.cover1x {
+    width: 1200px;
+    height: 462px;
+    background: linear-gradient(to bottom, rgba(248, 131, 21, 0.3), rgba(248, 131, 21, 0.3));
+    z-index: 1;
+    position: absolute;
+}
+
+/* ---------------- Events Page 2 ----------------------  */
+.cover3e {
+    width: 1200px;
+    height: 473.75px;
+    background: linear-gradient(to bottom, rgba(3, 130, 133, 0.537), rgba(3, 159, 157, 0.485));
+    z-index: 1;
+    position: absolute;
+}
+
+/* ---------------- Events Page 3 ----------------------  */
+
+.cover1e {
+    width: 1200px;
+    height: 444.5px;
+    background: linear-gradient(to bottom, rgba(248, 131, 21, 0.3), rgba(248, 131, 21, 0.3));
+    z-index: 1;
+    position: absolute;
+}
+
+/* ---------------- Events Page 4 ----------------------  */
+.cover4e {
+    width: 1200px;
+    height: 385.5px;
+    background: linear-gradient(to bottom, rgba(3, 122, 133, 0.537), rgba(3, 168, 165, 0.478));
+    z-index: 1;
+    position: absolute;
+}
+
+/* ---------------- Events Media Queries ----------------------  */
+@media (max-width: 1215px) {
+    .eventDates {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+/* ---------------- Events Pages End ----------------------  */
+
+
+
+/* ---------------- Contact Page ----------------------  */
+.pageWrapC {
+    width: 1200px;
+    height: 800px;
+    position: relative;
+    margin: auto;
+    -ms-transform: translateX(-3.5%);
+    transform: translateX(-3.5%);
+    background-color: rgb(255, 255, 255);
+}
+.galleryFaceC {
+    width: 1200px;
+    height: 600px;
+    margin-bottom: 45px;
+    margin-top: 175px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.middleImgCon {
+    width: 360px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.galleryWordsC {
+    width: 720px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.galleryWordsC input {
+    margin-bottom: 50px;
+    border: #FC5000 solid 1.5px;
+    width: 360px;
+    position: relative;
+}
+.galleryWordsC input, textarea {
+    background-color: #c9c9c9;
+    padding-left: 10px;
+    color: #959B9D;
+}
+.input-box {
+    height: 200px;
+    width: 360px;
+    margin-bottom: 50px;
+    border: #FC5000 solid 1.5px;
+    background-color: #c9c9c9;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.inputText {
+    color: #9a9a9a;
+}
+.conButt {
+    margin: auto;
+    -ms-transform: translateX(-5%);
+    transform: translateX(-5%);
+    background-color: #00879E;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px 50px;
+}
+.g2C {
+    width: 130%;
+    height: 68%;
+    position: absolute;
+    top: 0;
+}
+.cover2C {
+    background: linear-gradient(to bottom, rgba(248, 131, 21, 0.3), rgba(248, 131, 21, 0.3));
+    width: 130%;
+    height: 68%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* ------------------------contact Media Queries------------------------------- */
+@media (max-width: 1215px) {
+    .galleryFaceC {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .cover2C {
+        height: 168%;
+    }
+    .g2C {
+        height: 168%;
+
+    }
+    .middleImgCon {
+        padding-bottom: 200px;
+        margin-bottom: 200px;
+        margin-right: 100px;
+    }
+}
+
+
+/* -----------------------------fin----------------------- */
